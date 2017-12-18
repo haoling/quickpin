@@ -1,8 +1,8 @@
 {
-  "name": "QuickPin",
+  "name": "QuickPinry",
   "version": "0.1",
   "manifest_version": 2,
-  "description": "Quickly pin images to Pinterest with a right-click.",
+  "description": "Quickly pin images to Pinry with a right-click.",
   "browser_action": {
     "default_icon": "icon_48.png"
   },
@@ -11,6 +11,7 @@
       "16": "icon_16.png",
       "48": "icon_48.png"
    },  
-  "permissions": [ "tabs", "contextMenus", "http://*/*", "https://*/*" ],
-  "background": { "scripts": ["main.js"] }
+  "permissions": [ "tabs", "storage", "contextMenus", "http://*/*", "https://*/*" ],
+  "background": { "scripts": ["main.js"] },
+  "options_page": "options.html"
 }
