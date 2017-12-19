@@ -4,7 +4,7 @@ function pinIt(info, tab) {
         console.log(obj);
         var description = tab.title.substr(0, 500);
         var url = obj.pinryUrl + "/pins/pin-form/?pin-image-url=" + encodeURIComponent(info.srcUrl) +
-          "&pin-description=" + encodeURIComponent(tab.title) + "\n" + encodeURIComponent(tab.url);
+          "&pin-description=" + encodeURIComponent(tab.title + "\n" + tab.url);
           chrome.windows.create({
               url: url,
               type: "popup",
