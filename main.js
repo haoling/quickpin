@@ -8,7 +8,7 @@ function pinIt(info, tab) {
           chrome.windows.create({
               url: url,
               type: "popup",
-              width: 1200,
+              width: 784,
               height: 800
           });
       });
