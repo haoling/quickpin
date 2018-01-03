@@ -4,7 +4,7 @@ function pinIt(info, tab) {
         console.log(info);
         console.log(obj);
         var srcUrl = info.srcUrl;
-        if (info.linkUrl.match(/\.(jpe?g|png|gif)$/)) srcUrl = info.linkUrl;
+        if (info.linkUrl != undefined && info.linkUrl.match(/\.(jpe?g|png|gif)$/)) srcUrl = info.linkUrl;
         var description = tab.title.substr(0, 500);
         var url = obj.pinryUrl + "/pins/pin-form/?pin-image-url=" + encodeURIComponent(srcUrl) +
           "&pin-description=" + encodeURIComponent(tab.title + "\n" + tab.url) +
